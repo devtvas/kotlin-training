@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Android/Gradle (para quando o capstone entrar aqui)
+*.iml
+.gradle/
+/local.properties
+.idea/
+.cxx/
+.externalNativeBuild/
+**/build/
+captures/
+*.keystore
+keystore.properties
