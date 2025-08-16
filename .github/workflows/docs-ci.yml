@@ -1,0 +1,10 @@
+name: Docs CI
+on: [push, pull_request]
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: List docs
+        run: |
+          test -d docs && find docs -type f | sort || echo "no docs dir"
